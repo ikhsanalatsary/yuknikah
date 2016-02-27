@@ -15,5 +15,12 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "angular-google-maps": "^2.3.2",
+    "bower": "*",
+    "install": "^1.0.4",
+    "bootstrap-material-design": "^0.5.8",
+    "angular": "^1.5.0"
+  }
 }
