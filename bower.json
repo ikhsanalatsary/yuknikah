@@ -1,0 +1,19 @@
+{
+  "name": "wedding-invitation",
+  "description": "Website wedding invitation",
+  "main": "index.html",
+  "authors": [
+    "ikhsanalatsary"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "http://ourwedding.ikhsannetwork.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
