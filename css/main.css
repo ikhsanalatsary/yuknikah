@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Alex+Brush);
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
-
+@import "compass/css3";
 .navbar {
 	margin-bottom: 0;
 }
@@ -16,10 +16,14 @@
     text-align: center;
 }
 
+section#home {
+  height: 600px;
+}
+
 #home {
     position: relative;
-    width: 100%;
-    height: 900px;
+    /*width: 100%;*/
+    /*height: 900px;*/
     padding-top: 120px;
     padding-right: 0;
     padding-bottom: 60px;
@@ -43,49 +47,6 @@
   background-size: cover;
 }*/
 
-.logo {
-  background: url('./../img/averyson-logo.gif') no-repeat;
-  background-size: 100%;
-  float:left;
-  width:100%;
-  height: 30em;
-  /*font-family: Baskerville;*/
-  font-family: 'Alex Brush', cursive;
-  color: #575557;
-  position: relative;
-}
-
-.pipit, .ikhsan, .ampersand {
-    font-size: 3em;
-    text-align: center;
-}
-
-.pipit {
-  position: absolute;
-  top: 70px;
-  left: 120px;
-}
-
-.ikhsan {
-  position: absolute;
-  top: 120px;
-  left: 185px;  
-}
-
-.ampersand {
-  font-style: italic; 
-  position: absolute;
-  top: 95px;
-  left: 155px;
-}
-
-date {
-  border-top: 1px solid #575557;
-  border-bottom: 1px solid #575557;
-  position: absolute;
-  top: 170px;
-  left: 145px;
-}
 
 #mempelai h2 {
   font-family: 'Alex Brush', cursive;
@@ -96,5 +57,201 @@ date {
 }
 
 .angular-google-map-container {
-        height: 300px;
+  height: 400px;
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .logo {
+    background: url('./../img/averyson-logo.gif') no-repeat;
+    /*background-size: 100%;*/
+    /*float:left;*/
+    width:100%;
+    height: 30em;
+    /*font-family: Baskerville;*/
+    font-family: 'Alex Brush', cursive;
+    color: #575557;
+    position: relative;
+  }
+
+  .pipit, .ikhsan, .ampersand {
+      font-size: 5em;
+      text-align: center;
+  }
+
+  .pipit {
+    position: absolute;
+    top: 100px;
+    left: 230px;
+  }
+
+  .ikhsan {
+    position: absolute;
+    top: 180px;
+    left: 320px;
+  }
+
+  .ampersand {
+    font-style: italic;
+    position: absolute;
+    top: 140px;
+    left: 280px;
+  }
+
+  date {
+    border-top: 1px solid #575557;
+    border-bottom: 1px solid #575557;
+    position: absolute;
+    font-size: larger;
+    top: 275px;
+    left: 265px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .logo {
+    background: url('./../img/averyson-logo.gif') no-repeat;
+    background-size: 100%;
+    float:left;
+    width:100%;
+    height: 30em;
+    /*font-family: Baskerville;*/
+    font-family: 'Alex Brush', cursive;
+    color: #575557;
+    /*position: relative;*/
+  }
+
+  .pipit, .ikhsan, .ampersand {
+      font-size: 3em;
+      text-align: center;
+  }
+
+  .pipit {
+    position: absolute;
+    top: 50px;
+    left: 105px;
+  }
+
+  .ikhsan {
+    position: absolute;
+    top: 90px;
+    left: 155px;  
+  }
+
+  .ampersand {
+    font-style: italic; 
+    position: absolute;
+    top: 70px;
+    left: 135px;
+  }
+
+  date {
+    border-top: 1px solid #575557;
+    border-bottom: 1px solid #575557;
+    position: absolute;
+    font-size: smaller;
+    top: 140px;
+    left: 117px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .logo {
+    background: url('./../img/averyson-logo.gif') no-repeat;
+    background-size: 100%;
+    float:left;
+    width:100%;
+    height: 30em;
+    /*font-family: Baskerville;*/
+    font-family: 'Alex Brush', cursive;
+    color: #575557;
+    /*position: relative;*/
+  }
+
+  .pipit, .ikhsan, .ampersand {
+      font-size: 4em;
+      text-align: center;
+  }
+
+  .pipit {
+    position: absolute;
+    top: 60px;
+    left: 125px;
+  }
+
+  .ikhsan {
+    position: absolute;
+    top: 120px;
+    left: 190px;  
+  }
+
+  .ampersand {
+    font-style: italic; 
+    position: absolute;
+    top: 90px;
+    left: 160px;
+  }
+
+  date {
+    border-top: 1px solid #575557;
+    border-bottom: 1px solid #575557;
+    position: absolute;
+    top: 180px;
+    left: 155px;
+  }
+}
+
+@media (max-width: 767px) {
+  section#mempelai {
+    width: 37.5em;
+    margin: 2em auto;
+  }
+  .logo {
+    background: url('./../img/averyson-logo.gif') no-repeat;
+    background-size: 90%;
+    /*float:left;*/
+    width:100%;
+    height: 30em;
+    /*font-family: Baskerville;*/
+    font-family: 'Alex Brush', cursive;
+    color: #575557;
+    position: relative;
+  }
+
+  .pipit, .ikhsan, .ampersand {
+      font-size: 5em;
+      text-align: center;
+  }
+
+  .pipit {
+    position: absolute;
+    top: 80px;
+    left: 140px;
+  }
+
+  .ikhsan {
+    position: absolute;
+    top: 150px;
+    left: 220px;
+  }
+
+  .ampersand {
+    font-style: italic;
+    position: absolute;
+    top: 120px;
+    left: 180px;
+  }
+
+  date {
+    border-top: 1px solid #575557;
+    border-bottom: 1px solid #575557;
+    position: absolute;
+    top: 225px;
+    left: 190px;
+  }
 }

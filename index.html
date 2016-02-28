@@ -13,7 +13,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Bootstrap Material Design -->
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css">
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-material-design/dist/css/ripples.min.css">
@@ -29,7 +29,7 @@
     <![endif]-->
   </head>
   <body ng-controller="WeddingCtrl">
-    <div class="navbar navbar-inverse">
+    <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
@@ -37,6 +37,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <a class="navbar-brand" href="#">Brand</a>
         </div>
         <div class="navbar-collapse collapse navbar-inverse-collapse">
           <ul class="nav navbar-nav">
@@ -73,12 +74,12 @@
         <div class="row">
           <div class="col-md-4">
             <h2>Pipit</h2>
-            <p>Pipit, 25 Tahun. Wanita periang yang bercita-cita punya sekolahan buat anak-anak ngga mampu.
-            Murah senyum, kalem, tapi sangat cengeng. Tinggi, langsing.
-            Hobi makan es krim, mie ayam dan ngambek. Care sama temen dan pokoknya sama pasangan #ehh.</p>
+            <p>Pipit, 25 tahun. Wanita dengan "sejuta cita - cita", belum tercapai cita - cita yang 1 sudah ada
+            cita - cita lain. Suka eskrim, mi ayam dan cepet ngambek. Murah senyum, ramah, tapi drama.
+            Usil tapi penakut.</p>
             <blockquote>
-              Cinta itu.. jika kamu langsung datang kerumah dan melamarku ~ #duhh
-              <small>Pipit</small>
+              <p>Cinta itu.. jika kamu langsung datang kerumah dan melamarku ~ #duhh</p>
+              <small><cite>Pipit</cite></small>
             </blockquote>
           </div>
           <!-- break -->
@@ -98,12 +99,10 @@
 
           <div class="col-md-4">
             <h2>Ikhsan</h2>
-            <p>Ikhsan, 25 Tahun. Pria tampan yang bercita-cita menjadi jutawan dengan modal pas-pasan.
-            Hobi oprek, coding, tidur, main futsal, dan segala sesuatu tentang teknologi.
-            Bisanya cuma nyinyir dan komentar, agak sombong tapi nggak arogan. </p>
+            <p>Ikhsan, 25 tahun. Pria pendiam dengan cita - cita menjadi pengusaha sukses dengan modal seadanya. Serius, pendiam, cuek. Ga akan ngomong sebelum ditanya. Hobi futsal, ngoding dan ngotak ngatik semua yang ada di hp/laptop. Doyan komentar kadang sok tau.</p>
             <blockquote>
-              Cinta itu.. jika kamu bilang iya ~ waktu aku melamar dan bertanya "Maukah kau menikah denganku?" #eeaaa
-              <small>Ikhsan</small>
+              <p>Cinta itu.. jika kamu bilang iya ~ waktu aku melamar dan bertanya "Maukah kau menikah denganku?" #eeaaa</p>
+              <small><cite>Ikhsan</cite></small>
             </blockquote>
           </div>
           <!-- break -->
@@ -131,7 +130,16 @@
     </div>
   </section>
   <section id="peta">
-    <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+    <div class="row">
+        <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+        <ui-gmap-marker idKey="marker.id" coords="marker.coords"></ui-gmap-marker>
+        </ui-gmap-google-map>
+    </div>
+  </section>
+  <section id="mutiara">
+    <div class="container">
+      <div class="row"></div>
+    </div>
   </section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -140,8 +148,12 @@
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
     <script src="bower_components/angular-google-maps/dist/angular-google-maps.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
     <script src="bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+      $.material.init();
+    </script>
   </body>
 </html>
