@@ -5,7 +5,10 @@ angular.module('ourWedding', ['uiGmapgoogle-maps'])
 			 latitude: -6.245403, 
 			 longitude: 107.059932 
 			}, 
-			zoom: 16
+			zoom: 16,
+			options: {
+				scrollwheel: false
+			}
 		};
 
 		$scope.marker = {

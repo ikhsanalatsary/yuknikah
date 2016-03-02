@@ -1,11 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Alex+Brush);
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 @font-face {
   font-family: 'Angellife';
   src: url('./../fonts/AngellifeFree.eot');
   src: local('☺'),
-       url('./../fonts/AngellifeFree.woff') format('woff'), 
+       url('./../fonts/AngellifeFree.woff') format('woff'),
+       url('./../fonts/Angellife.woff2') format('woff2'), 
        url('./../fonts/AngellifeFree.ttf') format('truetype'), 
        url('./../fonts/AngellifeFree.svg') format('svg');
   /*font-weight: normal;
@@ -71,11 +74,12 @@ blockquote {
 }
 
 .quran {
-  font-family: 'Raleway',cursive;
+  font-family: 'EB Garamond',cursive;
   /*color: #716B20;*/
   color: #fff;
   font-weight: 700;
   /*text-align: center;*/
+  letter-spacing: 1px;
 }
 
 #home h1 {
@@ -147,7 +151,7 @@ blockquote {
 
 #home h2 {
     padding-top: 20px;
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 7em;
     line-height: 122px;
     font-weight: 900;
@@ -482,6 +486,84 @@ blockquote {
     background: #efefef;
 }
 
+#copyright {
+    position: relative;
+    width: 100%;
+    padding: 80px 0 10px;
+    background-color: transparent;
+    background-image: url('../img/bg.png');
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -ms-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    background-position: top center;
+    background-repeat: repeat;
+    background-attachment: initial;
+}
+
+#copyright h2 {
+    /*font-family: 'Dancing Script',cursive;*/
+    font-size: 38px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #a4c956;
+    text-shadow: 2px 1px 0 rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+#copyright h3 {
+    font-family: 'EB Garamond',serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #999;
+    text-transform: capitalize;
+    letter-spacing: 8px;
+}
+
+#copyright .social-icon {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#copyright .social-icon>li>a {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    display: block;
+    border-radius: 100%;
+    background-color: #a4c956;
+}
+
+#copyright .social-icon>li>a>.fa {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 55px;
+    height: 55px;
+    margin-left: -11px;
+    margin-top: -13px;
+    color: #fff;
+    font-family: 'FontAwesome';
+    font-size: 28px;
+    line-height: normal;
+    font-weight: 400;
+}
+
+#copyright p {
+    font-family: 'EB Garamond',serif;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #999;
+    text-transform: uppercase;
+}
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
