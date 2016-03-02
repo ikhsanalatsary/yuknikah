@@ -29,7 +29,7 @@
     <![endif]-->
   </head>
   <body ng-controller="WeddingCtrl">
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
@@ -55,7 +55,7 @@
       <div class="row">
         <div class="col-md-12">
           <blockquote class="quran">
-            “Dan diantara tanda – tanda kekuasaan-Nya ialah cipataan-Nya untukmu pasangan hidup dari jenismu sendiri, supaya kamu mendapatkan ketenangan hati dan dijadikan-Nya kasih sayang diatara kamu. Sesungguhnya yang demikian menjadi tanda- tanda kebesaran-Nya bagi orang – orang yang berfikir” (QS. Ar Rum : 21)
+            <p>“Dan diantara tanda – tanda kekuasaan-Nya ialah cipataan-Nya untukmu pasangan hidup dari jenismu sendiri, supaya kamu mendapatkan ketenangan hati dan dijadikan-Nya kasih sayang diatara kamu. Sesungguhnya yang demikian menjadi tanda- tanda kebesaran-Nya bagi orang – orang yang berfikir” (QS. Ar Rum : 21)</p>
           </blockquote>
           <h1 class="couple">Pipit dan Ikhsan</h1>
           <h3>
@@ -63,7 +63,7 @@
               Akan mengadakan
             </span>
           </h3>
-          <h2><i class="fa fa-heart-o"></i> PERNIKAHAN! <i class="fa fa-heart-o"></i></h2>
+          <h2><i class="fa fa-heart-o"></i> Pernikahan! <i class="fa fa-heart-o"></i></h2>
           <h4>Dan dengan harapan untuk turut </h4>
           <h5><span>~ Mengundang ~</span></h5>
         </div>
@@ -119,11 +119,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>Akad Nikah & Resepsi</h1>
+          <h1>Akad Nikah dan Resepsi</h1>
           <h3><span>Akan Di Gelar Pada </span></h3>
-           <h2>03, 2016</h2>
-          <h5><span>~ April ~</span></h5>
-          <h4>pukul 11.00 WIB s/d Selesai</h4>
+           <!-- <h2>03, 2016</h2>
+          <h5><span>~ April ~</span></h5> -->
+          <h2><time datetime="2016-04-03">03.04.2016</time></h2>
+          <h3><span>11.00 WIB - Selesai</span></h3>
           <address>
             Perum Bumi Lestari Jl. Merak Blok H34 No. 22-23,<br>
             RT.005 RW.017 Desa Mangun Jaya, Tambun Selatan 
@@ -133,6 +134,7 @@
     </div>
   </section>
   <section id="peta">
+    <div class="line"></div>
     <div class="row">
         <ui-gmap-google-map center='map.center' zoom='map.zoom'>
         <ui-gmap-marker idKey="marker.id" coords="marker.coords"></ui-gmap-marker>
@@ -140,13 +142,16 @@
     </div>
   </section>
   <section id="mutiara">
+    <div class="line"></div>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2>Kata Mutiara</h2>
+          <h2>Mutiara Cinta</h2>
           <ul class="content">
             <li class="content-item content-quote" ng-repeat="q in quotes">
-              {{q.quote}}
+              <blockquote>
+                <p>{{q.quote}}</p>
+              </blockquote>
             </li>
           </ul>
         </div>

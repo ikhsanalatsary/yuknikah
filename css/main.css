@@ -12,59 +12,68 @@
   font-style: normal;*/
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scrollbar-face-color: #a4c956;
+}
+
 .navbar {
 	margin-bottom: 0;
 }
 
 .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
+  display: inline-block;
+  float: none;
+  vertical-align: top;
 }
 
 .navbar .navbar-collapse {
     text-align: center;
 }
 
-/*section#home {
-  height: 600px;
-}*/
 
 #home {
-    position: relative;
-    /*width: 100%;*/
-    /*height: 900px;*/
-    padding-top: 120px;
-    padding-right: 0;
-    padding-bottom: 60px;
-    padding-left: 0;
-    background-color: transparent;
-    background-image: url('./../img/wedding-ring-and-rose.jpg');
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-attachment: initial;
+  position: relative;
+  padding-top: 120px;
+  padding-right: 0;
+  padding-bottom: 60px;
+  padding-left: 0;
+  background-color: transparent;
+  background-image: url('./../img/img01.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: initial;
 }
 
-/*#home {
-  width: 37.5em;
-  margin: 2em auto;
-  background: no-repeat url('./../img/wedding-ring-and-rose.jpg');
-  background-size: cover;
-}*/
+#home::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.35);
+}
+
+#home * {
+  z-index: 3;
+}
 
 blockquote {
   padding: 0 20px;
 }
 
 .quran {
-  /*padding-bottom: 30px;*/
   font-family: 'Raleway',cursive;
-  color: #B8984B;
+  /*color: #716B20;*/
+  color: #fff;
   font-weight: 700;
   /*text-align: center;*/
 }
@@ -75,7 +84,8 @@ blockquote {
   font-size: 5em;
   line-height: 87px;
   font-weight: 300;
-  color: #68662B;
+  /*color: #68662B;*/
+  color: #fff;
   text-shadow: 2px 1px 0 rgba(0,0,0,0.2);
   text-align: center;
 }
@@ -138,15 +148,18 @@ blockquote {
 #home h2 {
     padding-top: 20px;
     font-family: 'Raleway',sans-serif;
-    font-size: 5em;
+    font-size: 7em;
     line-height: 122px;
     font-weight: 900;
     color: #a4c956;
     text-shadow: 8px 7px 0 rgba(164,201,86,0.35);
     text-align: center;
+    text-transform: uppercase;
 }
 
 #home h2 {
+    /*color: #79892D;
+    text-shadow: 8px 7px 0 rgba(121, 137, 45, 0.25);*/
     color: #a4c956;
     text-shadow: 8px 7px 0 rgba(164,201,86,0.35);
 }
@@ -277,8 +290,196 @@ blockquote {
   background-attachment: initial;
 }
 
+#akad {
+  position: relative;
+  width: 100%;
+  padding-top: 120px;
+  padding-right: 0;
+  padding-bottom: 80px;
+  padding-left: 0;
+  background-color: transparent;
+  background-image: url('./../img/white-rose.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+}
+
+#akad::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.35);
+}
+
+#akad * {
+  z-index: 3;
+}
+
+#akad h1 {
+    padding-bottom: 30px;
+    font-family: 'Angellife';
+    font-size: 85px;
+    line-height: 87px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 1px 0 rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+#akad h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Raleway',sans-serif;
+    font-size: 120px;
+    line-height: 122px;
+    font-weight: 900;
+    color: #a4c956;
+    text-shadow: 8px 7px 0 rgba(164,201,86,0.35);
+    text-align: center;
+}
+
+/*time .soon {
+  border-top: 1px solid inherit;
+  border-bottom: 1px solid inherit;
+}*/
+
+#akad h3 {
+    position: relative;
+    font-family: 'EB Garamond',serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    text-shadow: 2px 1px 0 rgba(0,0,0,0.25);
+}
+
+#akad h3::before {
+    content: "";
+    position: absolute;
+    z-index: 3px;
+    left: 18%;
+    top: 50%;
+    height: 2px;
+    width: 20%;
+    margin-top: 0;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-size: initial;
+    -moz-background-size: initial;
+    -ms-background-size: initial;
+    -o-background-size: initial;
+    background-size: initial;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+}
+
+#akad h3::after {
+    content: "";
+    position: absolute;
+    z-index: 3px;
+    right: 18%;
+    top: 50%;
+    height: 2px;
+    width: 20%;
+    margin-top: 0;
+    background-color: #fff;
+    background-image: none;
+    -webkit-background-size: initial;
+    -moz-background-size: initial;
+    -ms-background-size: initial;
+    -o-background-size: initial;
+    background-size: initial;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+}
+
+#akad h5 {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-family: 'EB Garamond',serif;
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#akad h5 span {
+    background-color: #272727;
+    background-image: none;
+    -webkit-background-size: initial;
+    -moz-background-size: initial;
+    -ms-background-size: initial;
+    -o-background-size: initial;
+    background-size: initial;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    padding: 12px 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+
+#akad h4{
+    font-family: 'EB Garamond',serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 8px;
+    text-shadow: 2px 1px 0 rgba(0,0,0,0.4);
+}
+
+#akad address {
+  padding-top: 20px;
+  font-family: 'EB Garamond',serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 7px;
+  text-shadow: 2px 1px 0 rgba(0,0,0,0.4);
+}
+
+#peta {
+    position: relative;
+}
+
 .angular-google-map-container {
-  height: 400px;
+  height: 600px;
+}
+
+#mutiara {
+    position: relative;
+    width: 100%;
+    padding-top: 120px;
+    padding-right: 0;
+    padding-bottom: 180px;
+    padding-left: 0;
+    background: #efefef;
 }
 
 /* Extra small devices (phones, less than 768px) */
