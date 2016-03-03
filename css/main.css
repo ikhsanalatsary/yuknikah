@@ -486,6 +486,81 @@ blockquote {
     background: #efefef;
 }
 
+#mutiara h2 {
+    padding-bottom: 30px;
+    font-family: 'Angellife';
+    font-size: 85px;
+    line-height: 87px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 1px 0 rgba(0,0,0,0.2);
+    text-align: center;
+    margin-bottom: 50px
+}
+
+.content {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.content-quote {
+    color: #fff;
+}
+
+.content-item {
+    position: relative;
+    width: 80%;
+    margin-left: 8%;
+    clear: both;
+    padding: 2%;
+    font-family: 'EB Garamond',serif;
+    color: #888;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    -ms-box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    -o-box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+.content-quote blockquote {
+    font-size: 18px;
+    color: #fff;
+    border-color: #fff;
+    position: relative;
+    padding: 20px 25px 40px;
+    margin-bottom: 0;
+    border-color: transparent;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    border-radius: 1px;
+    background-color: #a4c956;
+}
+
+.content-quote blockquote::before {
+    font-family: 'FontAwesome';
+    font-size: 30px;
+    line-height: normal;
+    font-weight: 400;
+    content: '\f10d';
+}
+
+.content-quote blockquote::after {
+    font-family: 'FontAwesome';
+    font-size: 30px;
+    line-height: normal;
+    font-weight: 400;
+    content: '\f10e';
+    float: right;
+}
+
 #copyright {
     position: relative;
     width: 100%;

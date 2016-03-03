@@ -7,7 +7,8 @@ angular.module('ourWedding', ['uiGmapgoogle-maps'])
 			}, 
 			zoom: 16,
 			options: {
-				scrollwheel: false
+				scrollwheel: false,
+				draggable: isMobile()
 			}
 		};
 
@@ -27,4 +28,11 @@ angular.module('ourWedding', ['uiGmapgoogle-maps'])
 			{"id":5, "quote":"Pantaskan dirimu untuk jodohmu. Karena saat ini ia pun sedang memantaskan dirinya untukmu."},
 			{"id":6, "quote":"jodohmu adalah pemberian paling manis dan terbaik yg diberikan Allah padamu."}
 		];
+
+		function isMobile() {
+			if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+				return false;
+			}
+			return true
+		}
 	});
