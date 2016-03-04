@@ -1,5 +1,5 @@
 angular.module('ourWedding', ['uiGmapgoogle-maps'])
-	.controller('WeddingCtrl', function($scope) {
+	.controller('WeddingCtrl', function($scope, $location, $anchorScroll) {
 		$scope.map = { 
 			center: {
 			 latitude: -6.245403, 
@@ -35,4 +35,16 @@ angular.module('ourWedding', ['uiGmapgoogle-maps'])
 			}
 			return true
 		}
+		function scrollTo(id) {
+			$location.hash(id);
+			$anchorScroll();
+		}
+
+		function isActive(id) {
+			if ($location.hash() === id) return true;
+			return false;
+		}
+
+		$scope.scrollTo = scrollTo;
+		$scope.isActive = isActive;
 	});

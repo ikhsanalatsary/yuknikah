@@ -37,15 +37,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Brand</a>
+          <a class="navbar-brand" href="#">Pipit Ikhsan</a>
         </div>
         <div class="navbar-collapse collapse navbar-inverse-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#mempelai">Mempelai</a></li>
-            <li><a href="#akad">Akad</a></li>
-            <li><a href="#peta">Peta</a></li>
-            <li><a href="#mutiara">Mutiara Cinta</a></li>
+            <li ng-class="{'active': isActive('home')}"><a href="" ng-click="scrollTo('home')">Home</a></li>
+            <li ng-class="{'active': isActive('mempelai')}"><a href="" ng-click="scrollTo('mempelai')">Mempelai</a></li>
+            <li ng-class="{'active': isActive('akad')}"><a href="" ng-click="scrollTo('akad')">Akad</a></li>
+            <li ng-class="{'active': isActive('peta')}"><a href="" ng-click="scrollTo('peta')">Peta</a></li>
+            <li ng-class="{'active': isActive('mutiara')}"><a href="" ng-click="scrollTo('mutiara')">Mutiara Cinta</a></li>
           </ul>
         </div>
       </div>
