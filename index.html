@@ -37,7 +37,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Pipit Ikhsan</a>
+          <a ng-if="mobile" class="navbar-brand" href="#">Pipit Ikhsan</a>
         </div>
         <div class="navbar-collapse collapse navbar-inverse-collapse">
           <ul class="nav navbar-nav">
@@ -194,6 +194,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/lodash/dist/lodash.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-media-queries/match-media.js"></script>
     <script src="bower_components/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
     <script src="bower_components/angular-google-maps/dist/angular-google-maps.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

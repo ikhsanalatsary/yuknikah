@@ -25,6 +25,19 @@ html, body {
 	margin-bottom: 0;
 }
 
+
+.navbar-default .navbar-brand {
+    /*min-height: 65px;*/
+    /*padding-top: 22px;*/
+    /*padding-bottom: 22px;*/
+    font-family: 'Angellife';
+    font-size: 32px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;

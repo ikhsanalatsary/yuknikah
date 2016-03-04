@@ -1,5 +1,5 @@
-angular.module('ourWedding', ['uiGmapgoogle-maps'])
-	.controller('WeddingCtrl', function($scope, $location, $anchorScroll) {
+angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
+	.controller('WeddingCtrl', function($scope, $location, $anchorScroll, screenSize) {
 		$scope.map = { 
 			center: {
 			 latitude: -6.245403, 
@@ -47,4 +47,10 @@ angular.module('ourWedding', ['uiGmapgoogle-maps'])
 
 		$scope.scrollTo = scrollTo;
 		$scope.isActive = isActive;
+		$scope.desktop = screenSize.on('md, lg', function(match){
+		    $scope.desktop = match;
+		});
+		$scope.mobile = screenSize.on('xs, sm', function(match){
+		    $scope.mobile = match;
+		});
 	});
