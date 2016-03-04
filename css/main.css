@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://fonts.googleapis.com/css?family=EB+Garamond);
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900);
 @font-face {
   font-family: 'Angellife';
   src: url('./../fonts/AngellifeFree.eot');
@@ -37,17 +37,6 @@ html, body {
     color: #fff;
     text-align: center;
 }
-
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-}
-
-.navbar .navbar-collapse {
-    text-align: center;
-}
-
 
 #home {
   position: relative;
@@ -174,12 +163,12 @@ blockquote {
     text-transform: uppercase;
 }
 
-#home h2 {
-    /*color: #79892D;
-    text-shadow: 8px 7px 0 rgba(121, 137, 45, 0.25);*/
+/*#home h2 {
+    color: #79892D;
+    text-shadow: 8px 7px 0 rgba(121, 137, 45, 0.25);
     color: #a4c956;
     text-shadow: 8px 7px 0 rgba(164,201,86,0.35);
-}
+}*/
 
 #home h4 {
     font-family: 'EB Garamond',serif;
@@ -657,6 +646,16 @@ blockquote {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+      text-align: center;
+  }
+  
   .logo {
     background: url('./../img/averyson-logo.gif') no-repeat;
     /*background-size: 100%;*/
@@ -705,6 +704,15 @@ blockquote {
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+      text-align: center;
+  }
   .logo {
     background: url('./../img/averyson-logo.gif') no-repeat;
     background-size: 100%;
@@ -753,6 +761,16 @@ blockquote {
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  .navbar .navbar-collapse {
+      text-align: center;
+  }
+
   .logo {
     background: url('./../img/averyson-logo.gif') no-repeat;
     background-size: 100%;

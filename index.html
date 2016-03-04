@@ -203,6 +203,9 @@
     <script src="js/main.js"></script>
     <script type="text/javascript">
       $.material.init();
+      $(".navbar-nav li a").click(function(event) {
+        $(".navbar-collapse").collapse('hide');
+      });
     </script>
   </body>
 </html>
