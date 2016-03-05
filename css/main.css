@@ -21,6 +21,92 @@ html, body {
     scrollbar-face-color: #a4c956;
 }
 
+ /*Loading Pump*/
+ #loading {
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   position: fixed;
+   display: block;
+   opacity: 1;
+   background-color: #fff;
+   z-index: 1031; /*set higher more than navbar fixed top*/
+   /*text-align: center;*/
+}
+
+.text {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    color: #C22160;
+    font-weight: 400;
+    text-transform: uppercase;;
+}
+.rhombus2 {
+    margin: 40px 0 0 60px;
+    /*background: #fcfcfc;*/
+    margin: auto;
+    margin-top: 300px;
+    border-radius: 10px;
+    height: 75px;
+    width: 75px;
+    margin-bottom: 10px;
+    float: center;
+    animation-delay: 0.9s;
+    animation-duration: 0.8s;
+    animation-name: pump;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.26,-0.53,.57,2.32);
+}
+
+.rhombus2:before {
+    content: "";
+    position: absolute;
+    background: #EA4C89;
+    height: 40px;
+    width: 40px;
+    z-index: 0;
+    margin-top: 15px;
+    margin-left: 15px;
+    transform: rotate(45deg);
+}
+
+.rhombus2 .circle21 {
+    content: "";
+    position: absolute;
+    background: #EA4C89;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    border-radius: 50%;
+    /*animation-direction: alternate;*/
+}
+
+.rhombus2 .circle22 {
+    content: "";
+    position: absolute;
+    background: #EA4C89;
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    margin-left: 30px;
+    border-radius: 50%;
+    /*animation-direction: alternate;*/
+}
+
+@keyframes pump {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+/*End Loading*/
+
 .navbar {
 	margin-bottom: 0;
 }
@@ -655,7 +741,7 @@ blockquote {
   .navbar .navbar-collapse {
       text-align: center;
   }
-  
+
   .logo {
     background: url('./../img/averyson-logo.gif') no-repeat;
     /*background-size: 100%;*/

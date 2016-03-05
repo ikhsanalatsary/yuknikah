@@ -29,6 +29,15 @@
     <![endif]-->
   </head>
   <body ng-controller="WeddingCtrl">
+    <div ng-show="onload" id="loading">
+      <div class="rhombus2">
+        <div class="circle21"></div>
+        <div class="circle22"></div>
+      </div>
+      <div class="text">
+          <p>Loading...</p>
+      </div>
+    </div>
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -37,7 +46,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a ng-if="mobile" class="navbar-brand" href="#">Pipit Ikhsan</a>
+          <a ng-if="mobile" class="navbar-brand" href="#">Pipit <i class="fa fa-heart-o"></i> Ikhsan</a>
         </div>
         <div class="navbar-collapse collapse navbar-inverse-collapse">
           <ul class="nav navbar-nav">
