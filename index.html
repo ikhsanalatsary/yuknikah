@@ -86,7 +86,7 @@
         <div class="row">
           <div class="col-md-4">
             <h2 class="couple">Pipit</h2>
-            <p>Pipit, 25 tahun. Wanita dengan "sejuta cita - cita", belum tercapai cita - cita yang 1 sudah ada
+            <p>Pipit, nama panjang Fitriana, 25 tahun. Wanita dengan "sejuta cita - cita", belum tercapai cita - cita yang 1 sudah ada
             cita - cita lain. Suka eskrim, mi ayam dan cepet ngambek. Murah senyum, ramah, tapi drama.
             Usil tapi penakut.</p>
             <blockquote>
@@ -111,7 +111,7 @@
 
           <div class="col-md-4">
             <h2 class="couple">Ikhsan</h2>
-            <p>Ikhsan, 25 tahun. Pria pendiam dengan cita - cita menjadi pengusaha sukses dengan modal seadanya. Serius, pendiam, cuek. Ga akan ngomong sebelum ditanya. Hobi futsal, ngoding dan ngotak ngatik semua yang ada di hp/laptop. Doyan komentar kadang sok tau.</p>
+            <p>Ikhsan,nama panjang Abdul Fattah Ikhsan 25 tahun. Pria dengan cita - cita menjadi pengusaha sukses dengan modal seadanya. Serius, pendiam, cuek. Ga akan ngomong sebelum ditanya. Hobi futsal, ngoding dan ngotak-ngatik semua yang ada di hp/laptop. Doyan komentar kadang sok tau.</p>
             <blockquote>
               <p>Cinta itu.. jika kamu bilang iya ~ waktu aku melamar dan bertanya "Maukah kau menikah denganku?" #eeaaa</p>
               <small class="couple"><cite>Ikhsan</cite></small>
@@ -136,7 +136,7 @@
           <h3><span>09.00 WIB - Selesai</span></h3>
           <address>
             Perum Bumi Lestari Jl. Merak Blok H34 No. 22-23,<br>
-            RT.005 RW.017 Desa Mangun Jaya, Tambun Selatan 
+            RT.005 RW.017 Desa Mangun Jaya, <br> Tambun Selatan, Bekasi
           </address>
         </div>
       </div>
@@ -149,6 +149,9 @@
         <ui-gmap-marker idKey="marker.id" coords="marker.coords"></ui-gmap-marker>
         </ui-gmap-google-map>
     <!-- </div> -->
+    <div id="info">
+      <p>Double-click to zoom maps</p>
+    </div>
   </section>
   <section id="mutiara">
     <div class="line"></div>
@@ -180,11 +183,14 @@
       <div class="row">
         <div class="col-md-12">
           <ul class="list-inline social-icon">
-            <li><a href="#" class="icon-twitter" rel="tooltip" title="" data-placement="top" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#" class="icon-facebook" rel="tooltip" title="" data-placement="top" data-original-title="Facebook"><i class="fa fa-facebook-square"></i></a></li>
-            <li><a href="#" class="icon-google" rel="tooltip" title="" data-placement="top" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#" class="icon-instagram" rel="tooltip" title="" data-placement="top" data-original-title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" ng-sglclick="$evalAsync(twIkhsan())" ios-dblclick="twPipit()" class="icon-twitter" rel="tooltip" title="" data-placement="top" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" ng-sglclick="$evalAsync(fbIkhsan())" ios-dblclick="fbPipit()" class="icon-facebook" rel="tooltip" title="" data-placement="top" data-original-title="Facebook"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href="#" ng-sglclick="$evalAsyncg(plusIkhsan())" ios-dblclick="gplusPipit()" class="icon-google" rel="tooltip" title="" data-placement="top" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#" ng-sglclick="$evalAsync(instaIkhsan())" ios-dblclick="instaPipit()" class="icon-instagram" rel="tooltip" title="" data-placement="top" data-original-title="Instagram"><i class="fa fa-instagram"></i></a></li>
           </ul>
+          <div id="info">
+            <p>Double-click icon to view different link</p>
+          </div>
         </div>
       </div>
 
@@ -193,7 +199,7 @@
           <p>Pipit &amp; Ikhsan's Wedding Invitation built with <i class="fa fa-heart-o"></i> by <a href="http://ikhsannetwork.com" target="_blank">@_IkhsanNetwork</a></p>
           <p> &amp; Proudly built with  <a href="http://angularjs.org" target="_blank">AngularJS</a></p>
           <p>Copyright © 2016 All Right Reserved.</p>
-          <p>View on <a href="https://github.com/ikhsanalatsary/wedding-invitation">Github</a></p>
+          <p>View on <a href="https://github.com/ikhsanalatsary/wedding-invitation" target="_blank">Github</a></p>
         </div>
       </div>
     </div>

@@ -30,7 +30,7 @@ html, body {
    position: fixed;
    display: block;
    opacity: 1;
-   background-color: #fff;
+   background-color: inherit;
    z-index: 1031; /*set higher more than navbar fixed top*/
    /*text-align: center;*/
 }
@@ -691,7 +691,7 @@ blockquote {
     margin-left: auto;
     margin-right: auto;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 #copyright .social-icon>li>a {
@@ -726,6 +726,18 @@ blockquote {
     text-align: center;
     color: #999;
     text-transform: uppercase;
+}
+
+#info {
+    /*margin: 65px auto 0;*/
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#info p {
+  color: #bfbfbf;
+  font-size: 10px;
 }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
