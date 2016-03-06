@@ -5,11 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- End Favicon -->
+
     <title>Wedding Invitation</title>
 
-     <!-- Material Design fonts -->
-    <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons"> -->
+    <!-- Material Design fonts, better use @import in main.css -->
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -199,7 +218,9 @@
           <p>Pipit &amp; Ikhsan's Wedding Invitation built with <i class="fa fa-heart-o"></i> by <a href="http://ikhsannetwork.com" target="_blank">@_IkhsanNetwork</a></p>
           <p> &amp; Proudly built with  <a href="http://angularjs.org" target="_blank">AngularJS</a></p>
           <p>Copyright © 2016 All Right Reserved.</p>
-          <p>View on <a href="https://github.com/ikhsanalatsary/wedding-invitation" target="_blank">Github</a></p>
+          <div id="info">
+            <p>View on <a href="https://github.com/ikhsanalatsary/wedding-invitation" target="_blank">Github</a></p>
+          </div>
         </div>
       </div>
     </div>
@@ -216,11 +237,5 @@
     <script src="bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
     <script src="bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
     <script src="js/main.js"></script>
-    <script type="text/javascript">
-      $.material.init();
-      $(".navbar-nav li a").click(function(event) {
-        $(".navbar-collapse").collapse('hide');
-      });
-    </script>
   </body>
 </html>
