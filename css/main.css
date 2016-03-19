@@ -12,12 +12,12 @@
 
 @font-face {
   font-family: 'Angellife';
-  src: url('./../fonts/AngellifeFree.eot');
   src: local('☺'),
+       url('./../fonts/AngellifeFree.ttf') format('truetype'),
        url('./../fonts/AngellifeFree.woff') format('woff'),
        url('./../fonts/Angellife.woff2') format('woff2'), 
-       url('./../fonts/AngellifeFree.ttf') format('truetype'), 
-       url('./../fonts/AngellifeFree.svg') format('svg');
+       url('./../fonts/AngellifeFree.svg') format('svg'),
+       url('./../fonts/AngellifeFree.eot');
 }
 
 html, body {
@@ -47,7 +47,6 @@ html, body {
   color: #C22160;
   font-weight: 400;
   text-transform: uppercase;
-  ;
 }
 
 .rhombus2 {

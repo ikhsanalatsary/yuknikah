@@ -164,7 +164,13 @@
   <section id="peta">
     <div class="line"></div>
     <!-- <div class="row"> -->
-        <ui-gmap-google-map center='map.center' zoom='map.zoom' options="map.options">
+      <script type="text/ng-template" id="control.tpl.html">
+        <button class="btn btn-sm btn-raised btn-default" ng-click="controlClick()">
+        {{controlText}}
+        </button>
+      </script>
+        <ui-gmap-google-map center='map.center' zoom='map.zoom' options="options">
+        <ui-gmap-map-control template="control.tpl.html" position="top-right" controller="WeddingCtrl" index="-1"></ui-gmap-map-control>
         <ui-gmap-marker idKey="marker.id" coords="marker.coords"></ui-gmap-marker>
         </ui-gmap-google-map>
     <!-- </div> -->

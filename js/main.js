@@ -83,6 +83,8 @@ angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
 				ikhsan: 'https://www.instagram.com/ikhsan_alatsary/'
 			};
 
+			var wedLoc = "https://www.google.com/maps/place/6%C2%B014'36.3%22S+107%C2%B003'39.7%22E/@-6.2434127,107.0588419,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0";
+
 			function twPipit() {
 				openUrl(urlTw.pipit);
 			}
@@ -150,11 +152,12 @@ angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
 				 latitude: -6.245403, 
 				 longitude: 107.059932 
 				}, 
-				zoom: 16,
-				options: {
-					scrollwheel: false,
-					draggable: isMobile()
-				}
+				zoom: 16
+			};
+
+			$scope.options = {
+				scrollwheel: false,
+				draggable: isMobile()
 			};
 
 			$scope.marker = {
@@ -164,6 +167,12 @@ angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
 				  longitude: 107.06103064119816
 				}
 			};
+
+			$scope.controlText = 'Open in Gmaps';
+
+			$scope.controlClick = function() {
+				openUrl(wedLoc);
+			}
 
 			$scope.quotes = [
 				{"id":1, "quote":"Akan tetapi sehebat apapun kita merencanakan sesuatu. Tetap rencana Allah adalah sebaik-baiknya rancangan."},
