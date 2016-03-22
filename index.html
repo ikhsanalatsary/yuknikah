@@ -73,7 +73,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a ng-if="mobile" class="navbar-brand" href="#">Pipit <i class="fa fa-heart-o"></i> Ikhsan</a>
+          <a ng-if="mobile" class="navbar-brand" href="#">Pipit<i class="fa fa-heart-o"></i>Ikhsan</a>
         </div>
         <div class="navbar-collapse collapse navbar-inverse-collapse">
           <ul class="nav navbar-nav">
@@ -99,7 +99,7 @@
               ...Akan...
             </span>
           </h3>
-          <h2><i class="fa fa-heart-o"></i> Menikah! <i class="fa fa-heart-o"></i></h2>
+          <h2><i class="fa fa-heart-o"></i>Menikah!<i class="fa fa-heart-o"></i></h2>
           <h4>Dan mohon doa restu untuk turut </h4>
           <h5><span>~ Mengundang ~</span></h5>
         </div>
@@ -171,19 +171,20 @@
   </section>
   <section id="peta">
     <div class="line"></div>
-    <!-- <div class="row"> -->
+    <h1>Peta</h1>
+    <div>
       <script type="text/ng-template" id="control.tpl.html">
         <button class="btn btn-sm btn-raised btn-default" ng-click="controlClick()">
-        {{controlText}}
+          {{controlText}}
         </button>
       </script>
         <ui-gmap-google-map center='map.center' zoom='map.zoom' options="options">
-        <ui-gmap-map-control template="control.tpl.html" position="top-right" controller="WeddingCtrl" index="-1"></ui-gmap-map-control>
-        <ui-gmap-marker idKey="marker.id" coords="marker.coords"></ui-gmap-marker>
+          <ui-gmap-map-control template="control.tpl.html" position="top-right" controller="WeddingCtrl" index="-1"></ui-gmap-map-control>
+          <ui-gmap-marker idKey="marker.id" coords="marker.coords"></ui-gmap-marker>
         </ui-gmap-google-map>
-    <!-- </div> -->
-    <div id="info">
-      <p>Double-click to zoom maps</p>
+      <div class="info">
+        <p>Double-click to zoom maps</p>
+      </div>
     </div>
   </section>
   <section id="mutiara">
@@ -216,12 +217,12 @@
       <div class="row">
         <div class="col-md-12">
           <ul class="list-inline social-icon">
-            <li><a href="#" ng-sglclick="$evalAsync(twIkhsan())" ios-dblclick="twPipit()" class="icon-twitter" rel="tooltip" title="" data-placement="top" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#" ng-sglclick="$evalAsync(fbIkhsan())" ios-dblclick="fbPipit()" class="icon-facebook" rel="tooltip" title="" data-placement="top" data-original-title="Facebook"><i class="fa fa-facebook-square"></i></a></li>
-            <li><a href="#" ng-sglclick="$evalAsync(gplusIkhsan())" ios-dblclick="gplusPipit()" class="icon-google" rel="tooltip" title="" data-placement="top" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
-            <li><a href="#" ng-sglclick="$evalAsync(instaIkhsan())" ios-dblclick="instaPipit()" class="icon-instagram" rel="tooltip" title="" data-placement="top" data-original-title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#" ng-sglclick="$evalAsync(twIkhsan())" ios-dblclick="twPipit()" class="icon-twitter" data-toggle="tooltip" title="" data-placement="top" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" ng-sglclick="$evalAsync(fbIkhsan())" ios-dblclick="fbPipit()" class="icon-facebook" data-toggle="tooltip" title="" data-placement="top" data-original-title="Facebook"><i class="fa fa-facebook-square"></i></a></li>
+            <li><a href="#" ng-sglclick="$evalAsync(gplusIkhsan())" ios-dblclick="gplusPipit()" class="icon-google" data-toggle="tooltip" title="" data-placement="top" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#" ng-sglclick="$evalAsync(instaIkhsan())" ios-dblclick="instaPipit()" class="icon-instagram" data-toggle="tooltip" title="" data-placement="top" data-original-title="Instagram"><i class="fa fa-instagram"></i></a></li>
           </ul>
-          <div id="info">
+          <div class="info">
             <p>Double-click icon to view different link</p>
           </div>
         </div>
@@ -232,7 +233,7 @@
           <p>Pipit &amp; Ikhsan's Wedding Invitation built with <i class="fa fa-heart-o"></i> by <a href="http://ikhsannetwork.com" target="_blank">@_IkhsanNetwork</a></p>
           <p> &amp; Proudly built with  <a href="http://angularjs.org" target="_blank">AngularJS</a></p>
           <p>Copyright © 2016 All Right Reserved.</p>
-          <div id="info">
+          <div class="info">
             <p>View on <a href="https://github.com/ikhsanalatsary/wedding-invitation" target="_blank">Github</a></p>
           </div>
         </div>

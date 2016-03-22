@@ -205,6 +205,4 @@ angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
 
 //**JQUERY**//
 $.material.init();
-$(".navbar-nav li a").click(function(event) {
-    $(".navbar-collapse").collapse('hide');
-});
+$('[data-toggle="tooltip"]').tooltip();

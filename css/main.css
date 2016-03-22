@@ -170,6 +170,10 @@ blockquote {
   letter-spacing: 1px;
 }
 
+.fa {
+  margin: 0 10px 0 10px;
+}
+
 #home h1 {
   padding-bottom: 30px;
   font-family: 'Angellife';
@@ -547,6 +551,18 @@ blockquote {
   position: relative;
 }
 
+#peta h1 {
+  position: absolute;
+  z-index: 1;
+  font-family: 'Angellife';
+  text-align: center;
+  left: 50%;
+  color: #fff;
+  font-size: 5em;
+  line-height: 87px;
+  font-weight: 300;
+  text-shadow: 2px 1px 0 rgba(0,0,0,0.2);
+}
 .angular-google-map-container {
   height: 600px;
 }
@@ -715,15 +731,15 @@ blockquote {
   text-transform: uppercase;
 }
 
-#info {
+.info {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-align: center;
   padding-bottom: 20px;
 }
 
-#info p {
-  color: #bfbfbf;
-  font-size: 10px;
+.info p {
+  color: #bfbfbf !important;
+  font-size: 10px !important;
 }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
