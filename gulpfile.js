@@ -141,4 +141,4 @@ gulp.task('htmlmin', function() {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('build', ['copyimg', 'copyfont', 'copyfav', 'htmlmin']);
+gulp.task('default', ['copyimg', 'copyfont', 'copyfav', 'htmlmin']);
