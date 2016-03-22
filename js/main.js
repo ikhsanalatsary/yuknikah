@@ -128,7 +128,7 @@ angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
 				$timeout(function() {
 					element.style.display = "none";
 				}, 3000);
-			}
+			};
 
 			function isMobile() {
 				if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -172,7 +172,7 @@ angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
 
 			$scope.controlClick = function() {
 				openUrl(wedLoc);
-			}
+			};
 
 			$scope.quotes = [
 				{"id":1, "quote":"Akan tetapi sehebat apapun kita merencanakan sesuatu. Tetap rencana Allah adalah sebaik-baiknya rancangan."},
