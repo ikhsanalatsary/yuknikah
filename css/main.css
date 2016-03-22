@@ -789,7 +789,7 @@ blockquote {
     left: 280px;
   }
 
-  date {
+  .date {
     border-top: 1px solid #575557;
     border-bottom: 1px solid #575557;
     position: absolute;
@@ -846,7 +846,7 @@ blockquote {
     left: 135px;
   }
 
-  date {
+  .date {
     border-top: 1px solid #575557;
     border-bottom: 1px solid #575557;
     position: absolute;
@@ -902,7 +902,7 @@ blockquote {
     left: 160px;
   }
 
-  date {
+  .date {
     border-top: 1px solid #575557;
     border-bottom: 1px solid #575557;
     position: absolute;
@@ -951,7 +951,7 @@ blockquote {
     left: 290px;
   }
 
-  date {
+  .date {
     border-top: 1px solid #575557;
     border-bottom: 1px solid #575557;
     position: absolute;
@@ -993,7 +993,7 @@ blockquote {
     left: 230px;
   }
 
-  date {
+  .date {
     border-top: 1px solid #575557;
     border-bottom: 1px solid #575557;
     position: absolute;
@@ -1028,7 +1028,7 @@ blockquote {
     left: 170px;
   }
 
-  date {
+  .date {
     border-top: 1px solid #575557;
     border-bottom: 1px solid #575557;
     position: absolute;
@@ -1090,7 +1090,7 @@ blockquote {
     left: 130px;
   }
 
-  date {
+  .date {
     border-top: 1px solid #575557;
     border-bottom: 1px solid #575557;
     position: absolute;
@@ -1142,7 +1142,7 @@ blockquote {
     left: 110px;
   }
 
-  date {
+  .date {
     border-top: 1px solid #575557;
     border-bottom: 1px solid #575557;
     position: absolute;
