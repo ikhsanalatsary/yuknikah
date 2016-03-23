@@ -135,7 +135,7 @@ gulp.task('htmlmin', function() {
       gulp.src('index.html')
         .pipe(inject(es.merge([appjs, maincss]), {ignorePath: 'dist/', addRootSlash: false}))
         .pipe(htmlify({
-            customPrefixes: ['ui-', 'ios-']
+            customPrefixes: ['ui-', 'ios-', 'center', 'zoom', 'options', 'template', 'position', 'controller', 'index', 'idKey', 'coords']
         }))
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('dist'));

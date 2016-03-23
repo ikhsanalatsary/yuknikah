@@ -42,7 +42,7 @@ And of course this repo itself is open source with a [public repository][wedding
 
  Other Resources
  ----
- Images : [500px](http://500px.com/),  [unsplash](http://unsplash.com/)
+ Images : [500px](http://500px.com/), [unsplash](http://unsplash.com/), [Google Images](https://images.google.com)
 
  License
  ----
