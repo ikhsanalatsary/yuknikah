@@ -1,9 +1,9 @@
 # Wedding Invitation
 
-Wedding Invitation is a responsive website for invite your friends to the wedding.
+Wedding Invitation is a responsive website for inviting your friends to the wedding.
 
 ### Tech
-Use many of open source projects / library:
+Use many of open source projects / libraries:
 
 * [HTML5] - latest version markup language for presenting content
 * [AngularJS] - HTML enhanced for web apps!
@@ -25,7 +25,7 @@ Use many of open source projects / library:
 And of course this repo itself is open source with a [public repository][wedding]
  on GitHub.
 
- ### Installation
+### Installation
 
  You need Gulp installed globally:
 
