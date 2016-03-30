@@ -48,7 +48,7 @@ var vendorFiles = {
     styles: [
         paths.vendorCss.src + 'dist/**/*.css',
         '!' + paths.vendorCss.src + 'dist/**/*.min.css', 
-        '!' + paths.vendorCss.src + 'dist/**/bootstrap-theme.css'
+        '!' + paths.vendorCss.src + 'dist/**/*-theme.css'
     ],
     scripts: [
         paths.vendors.src + 'dist/jquery.js',
