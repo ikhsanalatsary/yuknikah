@@ -1,6 +1,6 @@
-# Wedding Invitation
+# Yuk Nikah!!!
 
-Wedding Invitation is a responsive website for inviting your friends to the wedding.
+Yuk Nikah is a responsive website for inviting your friends to the wedding.
 
 ### Tech
 Use many of open source projects / libraries:
@@ -52,7 +52,7 @@ And of course this repo itself is open source with a [public repository][wedding
 
 
    [wedding]: <https://github.com/ikhsanalatsary/wedding-invitation>
-   [git-repo-url]: <https://github.com/ikhsanalatsary/wedding-invitation.git>
+   [git-repo-url]: <https://github.com/ikhsanalatsary/yuk-nikah.git>
    [HTML5]: <https://en.wikipedia.org/wiki/HTML5>
    [Angular Google Maps]: <http://angular-ui.github.io/angular-google-maps>
    [Angular Media Queries]: <https://github.com/jacopotarantino/angular-match-media>
