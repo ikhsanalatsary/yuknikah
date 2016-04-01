@@ -1,7 +1,7 @@
 {
-  "name": "wedding-invitation",
+  "name": "yuknikah",
   "version": "1.0.0",
-  "description": "Website wedding invitation",
+  "description": "Wedding invitation WebApp",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

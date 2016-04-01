@@ -51,8 +51,8 @@ And of course this repo itself is open source with a [public repository][wedding
  [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
 
-   [wedding]: <https://github.com/ikhsanalatsary/wedding-invitation>
-   [git-repo-url]: <https://github.com/ikhsanalatsary/yuk-nikah.git>
+   [wedding]: <https://github.com/ikhsanalatsary/yuknikah>
+   [git-repo-url]: <https://github.com/ikhsanalatsary/yuknikah.git>
    [HTML5]: <https://en.wikipedia.org/wiki/HTML5>
    [Angular Google Maps]: <http://angular-ui.github.io/angular-google-maps>
    [Angular Media Queries]: <https://github.com/jacopotarantino/angular-match-media>
