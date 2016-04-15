@@ -13,7 +13,6 @@
     "gulp": "^3.9.1",
     "gulp-angular-htmlify": "^2.3.0",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-cli": "^1.2.1",
     "gulp-concat": "^2.6.0",
     "gulp-copy": "0.0.2",
     "gulp-cssmin": "^0.1.7",
@@ -28,6 +27,7 @@
     "jshint": "^2.9.1"
   },
   "dependencies": {
+    "gulp-cli": "^1.2.1",
     "streamqueue": "^1.1.1"
   }
 }
