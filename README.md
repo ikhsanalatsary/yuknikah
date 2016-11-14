@@ -2,6 +2,9 @@
 
 Yuk Nikah is a responsive website for inviting your friends to the wedding.
 
+### Demo
+[Yuknikah](http://ourwedding.netlify.com/)
+
 ### Tech
 Use many of open source projects / libraries:
 
@@ -47,7 +50,7 @@ And of course this repo itself is open source with a [public repository][wedding
  License
  ----
  ISC
- 
+
  [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
 
