@@ -80,8 +80,19 @@ angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
             };
     	}
     )
-	.controller('WeddingCtrl', ['$scope', '$location', '$anchorScroll', 'screenSize', '$window', '$timeout',
-		function($scope, $location, $anchorScroll, screenSize, $window, $timeout) {
+	.controller('WeddingCtrl', ['$scope', '$location', '$anchorScroll', 'screenSize', '$window', '$timeout', '$document',
+		function($scope, $location, $anchorScroll, screenSize, $window, $timeout, $document) {
+
+			var nav = $document[0].getElementById('nav');
+			$window.onscroll = function () {
+				if ($document[0].body.scrollTop > $window.innerHeight) {
+					nav.classList.add('nav-colored');
+					nav.classList.remove('nav-transparent');
+				} else {
+					nav.classList.add('nav-transparent');
+					nav.classList.remove('nav-colored');
+				}
+			}
 
 			//**PRIVATE**//
 			var urlTw = {
