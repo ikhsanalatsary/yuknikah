@@ -2,6 +2,27 @@
 
 //**ANGULAR**//
 angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
+	.config(function() {
+		$.material.init();
+		$('[data-toggle="tooltip"]').tooltip();
+		new WOW().init();
+		$.scrollUp({
+      scrollName: 'scrollUp',      // Element ID
+      scrollDistance: 300,         // Distance from top/bottom before showing element (px)
+      scrollFrom: 'top',           // 'top' or 'bottom'
+      scrollSpeed: 300,            // Speed back to top (ms)
+      easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
+      animation: 'fade',           // Fade, slide, none
+      animationSpeed: 200,         // Animation speed (ms)
+      scrollTrigger: false,        // Set a custom triggering element. Can be an HTML string or jQuery object
+      scrollTarget: false,         // Set a custom target element for scrolling to. Can be element or number
+      scrollText: '', // Text for element, can contain HTML
+      scrollTitle: false,          // Set a custom <a> title if required.
+      scrollImg: false,            // Set true to use image
+      activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+      zIndex: 2147483647           // Z-Index for the overlay
+    });
+	})
 	.directive('ngSglclick', ['$parse', function($parse) {
         return {
             restrict: 'A',
@@ -14,7 +35,7 @@ angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
                   timer = setTimeout(function() {
                     scope.$apply(function () {
                         fn(scope, { $event: event });
-                    }); 
+                    });
                     clicks = 0;             //after action performed, reset counter
                   }, delay);
                   } else {
@@ -59,7 +80,7 @@ angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
             };
     	}
     )
-	.controller('WeddingCtrl', ['$scope', '$location', '$anchorScroll', 'screenSize', '$window', '$timeout', 
+	.controller('WeddingCtrl', ['$scope', '$location', '$anchorScroll', 'screenSize', '$window', '$timeout',
 		function($scope, $location, $anchorScroll, screenSize, $window, $timeout) {
 
 			//**PRIVATE**//
@@ -147,11 +168,11 @@ angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
 
 			//**[PUBLIC] Export To view**//
 
-			$scope.map = { 
+			$scope.map = {
 				center: {
-				 latitude: -6.245403, 
-				 longitude: 107.059932 
-				}, 
+				 latitude: -6.245403,
+				 longitude: 107.059932
+				},
 				zoom: 16
 			};
 
@@ -163,7 +184,7 @@ angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
 			$scope.marker = {
 				id: 0,
 				coords: {
-				  latitude: -6.243412699363186, 
+				  latitude: -6.243412699363186,
 				  longitude: 107.06103064119816
 				}
 			};
@@ -202,7 +223,3 @@ angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
 			$scope.instaIkhsan = instaIkhsan;
 		}
 	]);
-
-//**JQUERY**//
-$.material.init();
-$('[data-toggle="tooltip"]').tooltip();

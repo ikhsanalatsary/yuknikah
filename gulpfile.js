@@ -47,7 +47,7 @@ var appFiles = {
 var vendorFiles = {
     styles: [
         paths.vendorCss.src + 'dist/**/*.css',
-        '!' + paths.vendorCss.src + 'dist/**/*.min.css', 
+        '!' + paths.vendorCss.src + 'dist/**/*.min.css',
         '!' + paths.vendorCss.src + 'dist/**/*-theme.css'
     ],
     scripts: [
@@ -59,7 +59,9 @@ var vendorFiles = {
         paths.vendors.src + 'angular-google-maps.js',
         paths.vendors.src + 'dist/js/bootstrap.js',
         paths.vendors.src + 'dist/js/material.js',
-        paths.vendors.src + 'dist/js/ripples.js'
+        paths.vendors.src + 'dist/js/ripples.js',
+        paths.vendors.src + 'dist/wow.js',
+        paths.vendors.src + 'dist/jquery.scrollUp.js',
     ]
 };
 
@@ -111,7 +113,7 @@ var appjs = gulp.src(vendorFiles.scripts)
 //         .pipe(sourcemaps.init({loadMaps: true}))
 //         .pipe(jshint())
 //         .pipe(jshint.reporter('default'))
-//         .pipe(minify().on('error', gutil.log))      
+//         .pipe(minify().on('error', gutil.log))
 //         .pipe(rename('main.min.js'))
 //         .pipe(sourcemaps.write('source-maps'))
 //         .pipe(gulp.dest(paths.scripts.dest));

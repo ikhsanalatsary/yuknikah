@@ -15,7 +15,7 @@
   src: local('☺'),
        url('./../fonts/AngellifeFree.ttf') format('truetype'),
        url('./../fonts/AngellifeFree.woff') format('woff'),
-       url('./../fonts/Angellife.woff2') format('woff2'), 
+       url('./../fonts/Angellife.woff2') format('woff2'),
        url('./../fonts/AngellifeFree.svg') format('svg'),
        url('./../fonts/AngellifeFree.eot');
 }
@@ -973,7 +973,7 @@ blockquote {
   #akad h2 {
     font-size: 8em;
   }
-  
+
   .pipit {
     position: absolute;
     top: 100px;
@@ -1158,4 +1158,12 @@ blockquote {
   #akad h3::after {
     right: 2%;
   }
+}
+
+#scrollUp {
+  bottom: 20px;
+  right: 20px;
+  width: 38px;
+  height: 38px;
+  background: url('./../img/top.png') no-repeat;
 }
