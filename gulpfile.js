@@ -62,6 +62,7 @@ var vendorFiles = {
         paths.vendors.src + 'dist/js/ripples.js',
         paths.vendors.src + 'dist/wow.js',
         paths.vendors.src + 'dist/jquery.scrollUp.js',
+        paths.vendors.src + 'jquery.nav.js',
     ]
 };
 
