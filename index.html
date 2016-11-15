@@ -60,7 +60,7 @@
     <![endif]-->
   </head>
   <body ng-controller="WeddingCtrl">
-    <div ng-show="onload" id="loading">
+    <div id="loading">
       <div class="rhombus2">
         <div class="circle21"></div>
         <div class="circle22"></div>
@@ -80,12 +80,12 @@
           <a ng-if="mobile" class="navbar-brand" href="#">Pipit<i class="fa fa-heart-o"></i>Ikhsan</a>
         </div>
         <div class="navbar-collapse collapse navbar-inverse-collapse">
-          <ul class="nav navbar-nav">
-            <li ng-class="{'active': isActive('home')}"><a href="" ng-click="scrollTo('home')">Home</a></li>
-            <li ng-class="{'active': isActive('mempelai')}"><a href="" ng-click="scrollTo('mempelai')">Mempelai</a></li>
-            <li ng-class="{'active': isActive('akad')}"><a href="" ng-click="scrollTo('akad')">Akad</a></li>
-            <li ng-class="{'active': isActive('peta')}"><a href="" ng-click="scrollTo('peta')">Peta</a></li>
-            <li ng-class="{'active': isActive('mutiara')}"><a href="" ng-click="scrollTo('mutiara')">Mutiara Cinta</a></li>
+          <ul class="nav navbar-nav menu">
+            <li ng-class="{'active': isActive('home')}"><a href="#home" ng-click="scrollTo('home')">Home</a></li>
+            <li ng-class="{'active': isActive('mempelai')}"><a href="#mempelai" ng-click="scrollTo('mempelai')">Mempelai</a></li>
+            <li ng-class="{'active': isActive('akad')}"><a href="#akad" ng-click="scrollTo('akad')">Akad</a></li>
+            <li ng-class="{'active': isActive('peta')}"><a href="#peta" ng-click="scrollTo('peta')">Peta</a></li>
+            <li ng-class="{'active': isActive('mutiara')}"><a href="#mutiara" ng-click="scrollTo('mutiara')">Mutiara Cinta</a></li>
           </ul>
         </div>
       </div>
@@ -253,6 +253,7 @@
     <script src="bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
     <script src="bower_components/wow/dist/wow.min.js"></script>
     <script src="bower_components/scrollup/dist/jquery.scrollUp.min.js"></script>
+    <script src="bower_components/jQuery-One-Page-Nav/jquery.nav.js"></script>
     <script src="js/main.js"></script>
     <!-- endinject -->
   </body>

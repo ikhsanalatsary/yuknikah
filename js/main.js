@@ -3,6 +3,18 @@
 //**ANGULAR**//
 angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
 	.config(function() {
+		window.onload = function() {
+			var element = document.getElementById("loading");
+			setTimeout(function() {
+				element.style.display = "none";
+			}, 3000);
+		};
+
+		$('.menu').onePageNav({
+			changeHash: false,
+			scrollSpeed: 1200,
+	 	});
+
 		$.material.init();
 		$('[data-toggle="tooltip"]').tooltip();
 		new WOW().init();
@@ -22,6 +34,17 @@ angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
       activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
       zIndex: 2147483647           // Z-Index for the overlay
     });
+
+		window.addEventListener('scroll', function (e) {
+			var nav = document.getElementById('nav');
+			if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
+					nav.classList.add('nav-colored');
+					nav.classList.remove('nav-transparent');
+				} else {
+					nav.classList.add('nav-transparent');
+					nav.classList.remove('nav-colored');
+				}
+		})
 	})
 	.directive('ngSglclick', ['$parse', function($parse) {
         return {
@@ -48,8 +71,7 @@ angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
     }])
     .directive('iosDblclick',
         function () {
-
-            const DblClickInterval = 300; //milliseconds
+            var DblClickInterval = 300; //milliseconds
 
             var firstClickTime;
             var waitingSecondClick = false;
@@ -80,19 +102,8 @@ angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
             };
     	}
     )
-	.controller('WeddingCtrl', ['$scope', '$location', '$anchorScroll', 'screenSize', '$window', '$timeout', '$document',
-		function($scope, $location, $anchorScroll, screenSize, $window, $timeout, $document) {
-
-			var nav = $document[0].getElementById('nav');
-			$window.onscroll = function () {
-				if ($document[0].body.scrollTop > $window.innerHeight) {
-					nav.classList.add('nav-colored');
-					nav.classList.remove('nav-transparent');
-				} else {
-					nav.classList.add('nav-transparent');
-					nav.classList.remove('nav-colored');
-				}
-			}
+	.controller('WeddingCtrl', ['$scope', '$location', '$anchorScroll', 'screenSize', '$window',
+		function($scope, $location, $anchorScroll, screenSize, $window) {
 
 			//**PRIVATE**//
 			var urlTw = {
@@ -154,14 +165,6 @@ angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
 				openUrl.focus();
 			}
 
-
-			$window.onload = function() {
-				var element = document.getElementById("loading");
-				$timeout(function() {
-					element.style.display = "none";
-				}, 3000);
-			};
-
 			function isMobile() {
 				if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 					return false;
@@ -215,7 +218,6 @@ angular.module('ourWedding', ['uiGmapgoogle-maps', 'matchMedia'])
 				{"id":6, "quote":"jodohmu adalah pemberian paling manis dan terbaik yg diberikan Allah padamu."}
 			];
 
-			$scope.onload = $window.onload;
 			$scope.scrollTo = scrollTo;
 			$scope.isActive = isActive;
 			$scope.desktop = screenSize.on('md, lg', function(match){
