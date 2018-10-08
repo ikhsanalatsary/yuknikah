@@ -10,25 +10,25 @@
   "author": "ikhsanalatsary",
   "license": "ISC",
   "devDependencies": {
-    "event-stream": "^3.3.2",
+    "event-stream": "^4.0.1",
     "gulp": "^3.9.1",
     "gulp-angular-htmlify": "^2.3.0",
-    "gulp-autoprefixer": "^3.1.0",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-concat": "^2.6.0",
-    "gulp-copy": "0.0.2",
-    "gulp-cssmin": "^0.1.7",
-    "gulp-htmlmin": "^1.3.0",
+    "gulp-copy": "4.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-inject": "^4.0.0",
     "gulp-jshint": "^2.0.0",
-    "gulp-print": "^2.0.1",
+    "gulp-print": "^5.0.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.5.3",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.7",
     "jshint": "^2.9.1"
   },
   "dependencies": {
-    "gulp-cli": "^1.2.1",
+    "gulp-cli": "^2.0.1",
     "streamqueue": "^1.1.1"
   }
 }
