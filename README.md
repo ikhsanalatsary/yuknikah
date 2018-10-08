@@ -1,5 +1,7 @@
 # Yuk Nikah!!!
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ikhsanalatsary/yuknikah.svg)](https://greenkeeper.io/)
+
 Yuk Nikah is a responsive website for inviting your friends to the wedding.
 
 ### Demo
