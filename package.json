@@ -28,7 +28,7 @@
     "jshint": "^2.9.1"
   },
   "dependencies": {
-    "gulp-cli": "^1.2.1",
+    "gulp-cli": "^2.0.0",
     "streamqueue": "^1.1.1"
   }
 }
